@@ -1,0 +1,7 @@
+<%= form_for @image, url: {action: :update} do |f| %>
+<p><%= f.label :title, 'タイトル' %>
+<%= f.text_field :title %></p>
+<%= f.submit '更新' %>
+<p><%= f.label :file, 'ファイル' %>
+<%= f.file_field :file %></p>
+<% end %>
